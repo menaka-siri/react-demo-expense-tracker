@@ -3,6 +3,9 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
+import ExpenseForm from "./components/ExpenseForm";
+
+export const categories = ["Groceries", "Utilities", "Entertainment", "Misc"];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -20,6 +23,9 @@ function App() {
 
   return (
     <div>
+      <div className="mb-5">
+        <ExpenseForm></ExpenseForm>
+      </div>
       <div className="mb-3">
         <ExpenseFilter
           onSelectCategory={(category) => {
