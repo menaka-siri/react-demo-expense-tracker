@@ -1,11 +1,10 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import categories from "./data/categories";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
 import ExpenseForm from "./components/ExpenseForm";
-
-export const categories = ["Groceries", "Utilities", "Entertainment", "Misc"];
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
