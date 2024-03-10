@@ -10,10 +10,10 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   const [expenses, setExpenses] = useState([
-    { id: 1, description: "aaa", amount: 10, category: "Utilities" },
-    { id: 2, description: "bbb", amount: 10, category: "Groceries" },
-    { id: 3, description: "ccc", amount: 10, category: "Groceries" },
-    { id: 4, description: "ddd", amount: 10, category: "Entertainment" },
+    { id: 1, description: "Electricity", amount: 35, category: "Utilities" },
+    { id: 2, description: "Apples", amount: 5, category: "Groceries" },
+    { id: 3, description: "Rice", amount: 8, category: "Groceries" },
+    { id: 4, description: "Movie", amount: 11, category: "Entertainment" },
   ]);
 
   const visibleExpenses = selectedCategory
